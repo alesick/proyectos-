@@ -1,0 +1,22 @@
+package machine;
+
+import java.util.Scanner;
+
+public class CoffeeMachine {
+    public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+        int cupswanted;
+        cupswanted= scanner.nextInt();
+        System.out.println("Write how many cups of coffee you will need:" +cupswanted);
+       int water = 200 * cupswanted;
+       int milk = 50 * cupswanted;
+       int coffeebeans = 15 * cupswanted;
+
+
+        System.out.println("Write how many cups of coffee you will need:" +cupswanted);
+        System.out.println("For" + cupswanted + "cups of cofee you will need:");
+        System.out.println(water +"ml of water");
+        System.out.println(milk +"ml of milk");
+        System.out.println(coffeebeans +"g of coffee beans");
+    }
+}
